@@ -172,11 +172,11 @@ export default function App() {
 
   return (
     <div className="w-screen min-h-screen bg-[#000] flex flex-col items-center justify-center overflow-y-auto select-none p-2 sm:p-4">
-      {/* 16:9 Presentation Stage - Perfectly scaled and non-clipping across all viewports */}
+      {/* 16:9 Presentation Stage - Optimized max-h for desktop viewports without scrolling/zooming */}
       <div
         ref={containerRef}
         id="presentation-frame"
-        className={`relative w-full sm:w-[min(94vw,167.11vh)] sm:max-h-[86vh] sm:aspect-video rounded-2xl overflow-y-auto sm:overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.85)] border flex flex-col justify-between transition-colors duration-500 my-auto ${
+        className={`relative w-full sm:w-[min(94vw,167.11vh)] sm:max-h-[82vh] sm:aspect-video rounded-2xl overflow-y-auto sm:overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.85)] border flex flex-col justify-between transition-colors duration-500 my-auto ${
           currentSlide.theme === 'white'
             ? 'border-[#0d2213]/15'
             : currentSlide.theme === 'lime'
