@@ -1,0 +1,8 @@
+{
+  "name": "Dz Boutique proposta",
+  "description": "Apresentação executiva e proposta comercial da Sense Sales para Dz Boutique Imobiliária.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
